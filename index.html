@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema Integrado de Gestión Escolar</title>
+    <link rel="stylesheet" href="Style.css">
+    <link rel="shortcut icon" href="/img/logo.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="/img/logo.png" alt="Logo fragata">
+        </div>
+        <nav>
+           <ul class="nav-links">
+                <li class="dropdown">
+                    <a href="#" class="ta">Institucional<span class="arrow">&#9660;</span></a>
+                    <ul class="submenu">
+                        <li><a href="#">Autoridades</a></li>
+                        <li><a href="#">Nuestra Historia</a></li>
+                        <li><a href="#">Nuestros Objetivos</a></li>
+                        <li><a href="#">Perfil de Egresado</a></li>
+                        <li><a href="#">Cooperadora</a></li>
+                        <li><a href="#">Biblioteca</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Academica<span class="arrow">&#9660;</span></a>
+                    <ul class="submenu">
+                        <li><a href="#">Maestro Mayor de Obras</a></li>
+                        <li><a href="#">Técnico en Computación</a></li>
+                        <li><a href="#">Plan de Estudios</a></li>
+                        <li><a href="#">Turno Noche</a></li>
+                        <li><a href="#">Proyectos</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Alumnos<span class="arrow">&#9660;</span></a>
+                    <ul class="submenu">
+                        <li><a href="#">Atención a Víctimas de Violencia</a></li>
+                        <li><a href="#">Tutorias</a></li>
+                        <li><a href="#">Documentación y Resoluciones</a></li>
+                    </ul>
+                </li>
+                <li class="login">
+                    <a href="/login.html" target="_blank" aria-label="Iniciar Sesion">Iniciar Sesión</a>
+                </li>
+                <li class="buscador">
+                    <div class="search-box">
+                        <input type="text" placeholder="Buscar" class="contenedor-buscador">
+                        <button class="buscar">Buscar</button>
+                    </div>
+                </li>                
+           </ul>            
+        </nav>
+    </header>
+
+    <main>
+    <div class="centro-informacion">
+            <div class="content">
+                <h1>Fragata Escuela Libertad</h1>
+                <p>La ET N° 21 "Fragata Escuela Libertad" es una institución pública de Buenos Aires que ofrece capacitación profesional. Además de enseñar habilidades técnicas, se enfoca en inculcar valores éticos para adaptarse a las demandas laborales y sociales, promoviendo un desarrollo integral que incluya crecimiento personal y moral.</p>
+            </div>
+    </div>
+
+    <div class="inscripcion">
+        <h2>Inscripción</h2>
+        <div class="slider">
+            <div class="slides">
+                <div class="slide" id="slide-1">
+                    <h3>Paso 1</h3>
+                    <p>Realiza la preinscripción en línea a través del siguiente enlace:</p>
+                    <a href="https://www.buenosaires.gob.ar/educacion/estudiantes/inscripcionescolar" target="_blank">Preinscripción en línea</a>
+                </div>
+                <div class="slide" id="slide-2">
+                    <h3>Paso 2</h3>
+                    <p>Envía un correo electrónico a <a href="mailto:inscripcionesturnonoche@gmail.com">inscripcionesturnonoche@gmail.com</a> con la siguiente información:</p>
+                    <ul>
+                        <li>Apellido y nombres completos</li>
+                        <li>Número de Documento</li>
+                        <li>Carrera a la que se inscribe</li>
+                        <li>Número de preinscripción</li>
+                    </ul>
+                </div>
+                <div class="slide" id="slide-3">
+                    <h3>Paso 3</h3>
+                    <p>Recibirás una respuesta con un documento PDF adjunto. Reenvía por correo el documento PDF recibido junto con:</p>
+                    <ul>
+                        <li>Foto del documento de identidad</li>
+                        <li>Título obtenido, constancia de estudios parciales o pase de otro establecimiento (lo que corresponda)</li>
+                        <li>A la cuenta: <a href="mailto:movilidad.secundaria@bue.edu.ar">movilidad.secundaria@bue.edu.ar</a></li>
+                    </ul>
+                </div>
+                <div class="slide" id="slide-4">
+                    <h3>Paso 4</h3>
+                    <p>Recibirás una respuesta con un documento PDF adjunto, necesario para realizar la inscripción. Una vez recibida la respuesta de MOVILIDAD, acércate a la Secretaría escolar con la siguiente documentación original y copia impresa:</p>
+                    <ul>
+                        <li>DNI</li>
+                        <li>2 FOTOS 4X4</li>
+                        <li>TÍTULO SECUNDARIO O PASE DE OTRO ESTABLECIMIENTO (según corresponda)</li>
+                        <li>PARTIDA DE NACIMIENTO</li>
+                        <li>DICTAMEN DE MOVILIDAD</li> 
+                        <li>FACTURA DE SERVICIO CON EL DOMICILIO DONDE VIVE</li>
+                        <li>Menores de 18 años deben concurrir acompañados por un adulto responsable</li>
+                    </ul>
+                </div>
+            </div>
+            <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+            <button class="next" onclick="changeSlide(1)">&#10095;</button>
+            <div class="indicador-dots">
+                <span class="dot" onclick="currentSlide(0)"></span>
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="contacto">
+        <div class="titulo-contacto">
+            <h2>Contactanos</h2>
+        </div>
+        <div class="caja-contenedor">
+            <div class="form-contacto">
+                <h3>Mandar un mensaje</h3>
+                <form>
+                    <div class="forma-contenedor">
+                        <div class="row50">
+                            <div class="input-contenedor">
+                                <span>Nombre</span>
+                                <input type="text" placeholder="Pablo">
+                            </div>
+                            <div class="input-contenedor">
+                                <span>Apellido</span>
+                                <input type="text" placeholder="Soto">
+                            </div>
+                        </div>
+
+                        <div class="row50">
+                                <div class="input-contenedor">
+                                    <span>Email</span>
+                                    <input type="email" placeholder="random@gmail.com">
+                                </div>
+                                <div class="input-contenedor">
+                                    <span>Numero</span>
+                                    <input type="text" placeholder="+54 9 11 7312-8402">
+                                </div>
+                        </div>
+                        
+                        <div class="row100">
+                            <div class="input-contenedor">
+                                <span>Mensaje</span>
+                                <textarea placeholder="Escribi tu mensaje..."></textarea>
+                            </div>
+                        </div>
+
+                        <div class="row100">
+                            <div class="input-contenedor">
+                               <input type="submit" value="Enviar">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="info-contacto">
+                <h3>Informacion del Contacto</h3>
+                <div class="info-contenedor">
+                    <div>
+                        <span><ion-icon name="location-outline"></ion-icon></span>
+                        <p>Nuñez 3638, C1430AMF<br>Cdad. Autónoma de Buenos Aires</p>
+                    </div>
+                    <div>
+                        <span><ion-icon name="mail-outline"></ion-icon></span>
+                        <a href="#">et21web@gmail.com</a>
+                    </div>
+                    <div>
+                        <span><ion-icon name="call-outline"></ion-icon></span>
+                        <a href="tel:+11-4543-7363">011 4546-3878</a>
+                    </div>
+                    <ul class="redes">
+                        <li><a href="https://www.instagram.com/escuelatecnica21/"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                        <li><a href="https://www.facebook.com/ET21DE10/"><ion-icon name="logo-facebook"></ion-icon></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="map-contacto">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13143.583400283876!2d-58.4782313!3d-34
+                .5561923!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb68e3b0a9d41%3A0x6cde71d06b8f9ef2!2sEscuela%20T%C3%A9cn
+                ica%20N%C2%BA21%20%22Fragata%20Escuela%20Libertad%22!5e0!3m2!1ses-419!2sar!4v1716216396533!5m2!1ses-419!2
+                sar"style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </div>
+    </main>
+    <footer>
+        <div class="footer">
+            <p style="text-align: center; color: rgb(87, 87, 87);">©  2024 Escuela Técnica Nº 21 D.E. 10.</p>
+        </div>
+    </footer>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="/script.js"></script>
+</body>
+</html>
